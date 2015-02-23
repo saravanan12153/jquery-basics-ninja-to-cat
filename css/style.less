@@ -5,6 +5,7 @@
 @lightgreen: #AAD450;
 @lightpink: #F27490;
 @navyblue: #334455;
+@lightgrey: #EEE;
 
 // ************
 
@@ -15,11 +16,58 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background: @navyblue;
 }
 
 div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    min-height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 50px;
+}
+
+img {
+	display: block;
+	margin: 10px auto;
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	padding: 10px 25px;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
+	margin: 10px 0px;
+	font-weight: 700;
+	background: @lightgreen;
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline:none;
+  text-transform: uppercase;
+}
+
+button:hover {
+	background: @lightblue;
+}
+
+div.header, div.footer {
+	text-align: center;
+	padding: 10px 0px;
+	p {
+		font-size: 14px;
+	}
+}
+
+div.body {
+	text-align: center;
+}
+
+div.container {
+	max-width: 970px;
+	margin: 15px auto;
+	background: @lightgrey;
+	border-radius: 15px;
 }
